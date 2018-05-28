@@ -1,6 +1,12 @@
 # Plesk
 Plesk is a control panel commonly used for shared hosting platforms. 
 
+| Contents                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------|
+|[**Plesk CLI**](https://docs.osullivan.sh/plesk/#plesk-cli)                                                            |
+|[*Accessing Plesk web-interface using CLI*](https://docs.osullivan.sh/plesk/#accessing-plesk-web-interface-using-cli)  |
+|[*Accessing MySQL using CLI*](https://docs.osullivan.sh/plesk/#accessing-mysql-using-cli)                              |
+
 ## Plesk CLI
 The Plesk CLI is a set of command-line tools which can be used to manage Plesk without using the web interface. It is much more in-depth than what I shall cover here, however I have included a small number of useful tools from the CLI below which are useful when investigating and resolving issues with Plesk servers.
 
