@@ -7,6 +7,8 @@ Plesk is a control panel commonly used for shared hosting platforms.
 |[*Accessing Plesk web-interface using CLI*](https://docs.osullivan.sh/plesk/#accessing-plesk-web-interface-using-cli)  |
 |[*Accessing MySQL using CLI*](https://docs.osullivan.sh/plesk/#accessing-mysql-using-cli)                              |
 |[*Dumping databases using CLI*](https://docs.osullivan.sh/plesk/#dumping-databases-using-cli)                          |
+|[**FTP**](https://docs.osullivan.sh/plesk/#ftp)                                                                        |
+|[*Configuring Passive FTP*](https://docs.osullivan.sh/plesk/#passive-ftp)                                              |
 
 ## Plesk CLI
 The Plesk CLI is a set of command-line tools which can be used to manage Plesk without using the web interface. It is much more in-depth than what I shall cover here, however I have included a small number of useful tools from the CLI below which are useful when investigating and resolving issues with Plesk servers.
@@ -34,3 +36,9 @@ The Plesk db CLI also has the facility to dump databases to file. It is somewhat
 ```mysqldump -uadmin -p`cat /etc/psa.psa.shadow` [database_name]```
 #### New Method (Plesk CLI)
 ``` plesk db dump [database_name]```
+
+## FTP
+One of the core functions of Plesk is the ability to use and manage your website via FTP. Here is some information you may find useful about FTP on Plesk.
+
+### Passive FTP
+I have written a seperate guide on setting up Passive FTP when running on a NATed server called [*Configuring Passive FTP*](https://docs.osullivan.sh/plesk/Passive-FTP).
