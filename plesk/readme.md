@@ -11,3 +11,11 @@ These are the two commands you will likely need if you don't have the admin pass
 ```/usr/local/psa/bin/admin --show-password```
 #### Onyx
 ```plesk login```
+
+### Accessing MySQL using CLI
+If you don't have the admin MySQL password, then depending on your version of Plesk, you can retrieve / access MySQL using the CLI. This is only possible via the Plesk CLI on Onyx, but previous versions of Plesk also have a method of accessing MySQL which I have also documented here.
+
+#### Prior to Onyx
+```mysql -uadmin -p`cat /etc/psa/.psa.shadow` ```
+#### Onyx
+```plesk db```
