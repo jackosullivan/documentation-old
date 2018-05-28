@@ -25,3 +25,11 @@ If you don't have the admin MySQL password, then depending on your version of Pl
 ```mysql -uadmin -p`cat /etc/psa/.psa.shadow` ```
 #### Onyx
 ```plesk db```
+
+### Dumping databases using CLI
+The Plesk db CLI also has the facility to dump databases to file. It is somewhat more straight forward than using the mysqldump command and have to cat the shadow file out which is why I have included it here. As is the case with large parts of the Plesk CLI, I am unsure as to when this was introduced and so I have also included the old method.
+
+#### Old Method (mysqldump)
+```mysqldump -uadmin -p`cat /etc/psa.psa.shadow` [database_name]```
+#### New Method (Plesk CLI)
+``` plesk db dump [database_name]```
