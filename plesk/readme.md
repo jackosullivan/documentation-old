@@ -6,6 +6,7 @@ Plesk is a control panel commonly used for shared hosting platforms.
 |[**Plesk CLI**](https://docs.osullivan.sh/plesk/#plesk-cli)                                                            |
 |[*Accessing Plesk web-interface using CLI*](https://docs.osullivan.sh/plesk/#accessing-plesk-web-interface-using-cli)  |
 |[*Accessing MySQL using CLI*](https://docs.osullivan.sh/plesk/#accessing-mysql-using-cli)                              |
+|[*Dumping databases using CLI*](https://docs.osullivan.sh/plesk/#dumping-databases-using-cli)                          |
 
 ## Plesk CLI
 The Plesk CLI is a set of command-line tools which can be used to manage Plesk without using the web interface. It is much more in-depth than what I shall cover here, however I have included a small number of useful tools from the CLI below which are useful when investigating and resolving issues with Plesk servers.
@@ -25,3 +26,11 @@ If you don't have the admin MySQL password, then depending on your version of Pl
 ```mysql -uadmin -p`cat /etc/psa/.psa.shadow` ```
 #### Onyx
 ```plesk db```
+
+### Dumping databases using CLI
+The Plesk db CLI also has the facility to dump databases to file. It is somewhat more straight forward than using the mysqldump command and have to cat the shadow file out which is why I have included it here. As is the case with large parts of the Plesk CLI, I am unsure as to when this was introduced and so I have also included the old method.
+
+#### Old Method (mysqldump)
+```mysqldump -uadmin -p`cat /etc/psa.psa.shadow` [database_name]```
+#### New Method (Plesk CLI)
+``` plesk db dump [database_name]```
