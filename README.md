@@ -3,5 +3,5 @@ Collection of useful commands, snippets, and diagnostic information for identify
 
 |Contents                                     |
 |---------------------------------------------|
-|[**Plesk**](https://docs.osullivan.sh/plesk/)|
-|[**Outlook**](https://docs.osullivan.sh/Desktop/Outlook/)/
+|[**Plesk**](plesk/)|
+|[**Outlook**](Desktop/Outlook/)/
