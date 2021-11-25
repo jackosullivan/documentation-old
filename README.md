@@ -3,5 +3,6 @@ Collection of useful commands, snippets, and diagnostic information for identify
 
 |Contents                                     |
 |---------------------------------------------|
-|[**Plesk**](plesk/)|
-|[**Outlook**](Desktop/Outlook/)/
+|[**Control Panels**](control-panels/)        |
+|[**Linux**](linux/)                          |
+|[**Windows**](windows/)                      |
