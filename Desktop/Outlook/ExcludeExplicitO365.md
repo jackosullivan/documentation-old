@@ -9,7 +9,7 @@ You can confirm that this is the case within Outlook by going to File > Info at 
 To fix this, we need to make a change to the Windows Registry. You will need to configure the following registry key:
 
 ```
-HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\outlook\autodiscover
+HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover
 DWORD: ExcludeExplicitO365Endpoint
 Value = 1
 ```
